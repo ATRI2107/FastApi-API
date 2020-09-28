@@ -18,8 +18,8 @@ def create_user(db: Session, user: schemas.UserCreate):
     db.refresh(db_user)
     return db_user
 
-def get_items(db: Session,user: schemas.UserBase):
-    user=get_user_by_email(db,user.email)
+def get_items(db: Session,user_id: int):
+    user=get_user(db,user_id)
     return user.items
 def create_user_item(db: Session, item: schemas.ItemCreate, user_id: int):
     db_item=models.Item(**item.dict(),owner_id=user_id)
