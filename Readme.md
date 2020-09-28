@@ -1,6 +1,8 @@
 <h1>FastApi-API</h1>
 <p> This Api has small features like adding and logging in of users and adding products for individual users </p>
 <p> This can serve as a basis for major api projetcs </p>
+<p> Install FastApi by <i>pip install fastapi </i></p>
+<p> Install uvicorn by <i>pip install uvicorn</i></p>
 
 <b> Run the project by the following command </b>
 <i>uvicorn main:app --reload</i>
